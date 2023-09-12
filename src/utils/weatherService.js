@@ -4,7 +4,7 @@
 
 import fetchGeocodeData from "./geocodeService";
 
-const API_KEY = 'f004548ff7d1a85f464edfec953f5ed0';
+const API_KEY = process.env.NEXT_PUBLIC_WEATHER_MAP_API;
 const url = 'https://api.openweathermap.org/data/3.0/onecall'
 
 const fetchWeatherData = async () => {

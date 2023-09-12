@@ -1,5 +1,5 @@
 const fetchGeocodeData = async () => {
-  const apiKey = 'AIzaSyBFh9xSjGRXRVt6XKYHLPv2FNo6_1A3RdA';
+  const apiKey = process.env.NEXT_PUBLIC_GEOCODE_API;
   const city = 'London';
 
   const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(city)}&key=${apiKey}`;
